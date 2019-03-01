@@ -46,4 +46,3 @@ def select_character_names_and_number_of_books_they_are_in
   ON Characters.id = character_books.character_id
   GROUP BY Characters.name;"
 end
-SELECT COUNT(*) FROM cats WHERE net_worth > 1000000
