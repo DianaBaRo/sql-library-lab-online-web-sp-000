@@ -40,10 +40,11 @@ def select_series_title_with_most_human_characters
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "SELECT Characters.name, COUNT(Books.id)
+  "SELECT Characters.name, COUNT(Books.series_id)
   FROM characters
   JOIN books
   ON Characters.series_id = Books.series_id
-  GROUP BY Characters.name
-  ;"
+  GROUP BY Characters.name;"
 end
+
+SELECT COUNT(*) FROM cats WHERE net_worth > 1000000
