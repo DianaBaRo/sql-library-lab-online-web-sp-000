@@ -1,3 +1,3 @@
-UPDATE characters SET name = "Hana" WHERE name = "Hannah";
-
-characters
+UPDATE characters
+SET species = "Martian"
+WHERE id = (SELECT MAX(id) FROM characters);
